@@ -1,0 +1,6 @@
+gunicorn==19.9.0
+Flask==1.1.2
+imutils==0.5.3
+Jinja2==2.11.2
+numpy==1.19.0
+requests==2.23.0
