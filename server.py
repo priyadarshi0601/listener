@@ -7,7 +7,6 @@ def home():
     print(request.json)
     result = request.form.to_dict(flat=False)
     print('FORM DATA',result)
-    return result
     return('Hello')
 if __name__=="__main__":
     app.run(host='0.0.0.0',debug=True)
