@@ -5,7 +5,8 @@ app = Flask(__name__)
 @app.route('/listen',methods=['GET','POST'])
 def home():
     #print(request.get_json)
-    print('FORM DATA',request.form)
+    result = request.form.to_dict(flat=False)
+    print('FORM DATA',result)
     return('Hello')
 if __name__=="__main__":
     app.run(host='0.0.0.0',debug=True)
