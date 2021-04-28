@@ -4,7 +4,7 @@ from flask import request
 app = Flask(__name__)
 @app.route('/listen',methods=['GET','POST'])
 def home():
-    print(request.get_json)
+    print(request.json)
     result = request.form.to_dict(flat=False)
     print('FORM DATA',result)
     return('Hello')
