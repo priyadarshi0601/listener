@@ -10,6 +10,6 @@ def home():
     return('Hello')
 @app.route('/get_val')
 def get():
-    return {'ot':50}
+    return '50'
 if __name__=="__main__":
     app.run(host='0.0.0.0',debug=True)
