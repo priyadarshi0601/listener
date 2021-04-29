@@ -8,5 +8,8 @@ def home():
     result = request.form.to_dict(flat=False)
     print('FORM DATA',result)
     return('Hello')
+@app.route('/get_val')
+def get():
+    return 100
 if __name__=="__main__":
     app.run(host='0.0.0.0',debug=True)
